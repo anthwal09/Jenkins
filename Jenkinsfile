@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('Build & Test') {
             steps {
-                echo 'Running python script on Windows...'
-                bat 'python hello.py'
+                echo 'Running python script with correct path...'
+                bat '"C:\\Users\\abhis\\AppData\\Local\\Python\\bin\\python.exe" hello.py'
             }
         }
     }
